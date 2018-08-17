@@ -1,0 +1,272 @@
+/*
+Theme Name: dejesustheme
+Theme URI: 
+Description: De Jesus & Associates theme built with Bootstrap 
+Version:1.1
+Author: Rooster Manila
+Author URI: https://rooster.com.ph
+*/
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+h1,
+h2 {
+    font-family: 'Cantarell', sans-serif;
+}
+
+.bg-jumbo-home {
+    background-image: url(../Images/cover.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg-jumbo-blogpost {
+    background-image: url(../Images/full-blog.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+}
+
+.bg-jumbotron {
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.jumbotron {
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0;
+}
+
+.bg-jumbo-contactus {
+    background-image: url(../Images/map.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.bg-jumbo-blog {
+    background-image: url(../Images/blog-cover.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bg-jumbo-home h1 {
+    color: white;
+    margin-top: 20%;
+    letter-spacing: 5px;
+}
+
+.bg-jumbo-home p {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.bg-jumbo-blog h1 {
+    color: white;
+    font-size: 72px;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.bg-jumbo-blog p {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.bg-lawyer {
+    background-image: url(../Images/lawyerbg.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.bg-signup {
+    background-image: url(../Images/sign-up.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 30vh;
+    padding-top: 30px;
+}
+
+.lawyer {
+    background-image: url('../Images/p1.png');
+    height: 30px;
+}
+
+.padtop20 {
+    padding-top: 20px;
+}
+
+.padtop30 {
+    padding-top: 30px;
+}
+
+.padtop40 {
+    padding-top: 40px;
+}
+
+.padtop60 {
+    padding-top: 60%;
+}
+
+.padleft {
+    padding-left: 20px;
+}
+
+.padbot30 {
+    padding-bottom: 30px;
+}
+
+.btn-orange {
+    background-color: #F7931E;
+    height: 38px;
+    color: white;
+    border-radius: 0;
+}
+
+.btn-search {
+    background-color: #F7931E;
+    color: white;
+    border-radius: 0;
+}
+
+.btn-radius {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0 3px 3px 0;
+}
+
+.card-body {
+    flex: 1.1 auto;
+    padding: 2.25rem;
+}
+
+.border-size {
+    border-width: 3px thin;
+    border-color: white;
+}
+
+.bg-transparent {
+    height: 35px;
+    color: white;
+    background-color: transparent;
+    border-width: 1px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .1s ease;
+    background-color: #F7931E;
+    color: black;
+}
+
+.overlay:hover {
+    opacity: 100;
+    color: white;
+}
+
+.form-control {
+    background-color: transparent;
+    color: white;
+}
+
+.form-control-blank {
+    background-color: transparent;
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 3px 0 0 3px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control-plaintext {
+    color: #fff;
+    border-color: #fff;
+    border-width: 1px 1px;
+}
+
+.form-control-blank::-webkit-input-placeholder {
+    color: white;
+}
+
+.form-control-blank::-webkit-input-placeholder:focus {
+    color: white;
+}
+
+.bg-dark {
+    color: white;
+}
+
+.navbar {
+    border-top: 5px solid #F7931E;
+}
+
+.glyphicon-home {
+    height: 2px;
+}
+
+.form {
+    color: white;
+}
+
+.form-group1 {
+    color: black;
+    height: 100px;
+    width: 350px;
+    padding-left: 6px;
+}
+
+.bg-footer {
+    background-color: #333333;
+    color: black;
+}
+
+.breadcrumb {
+    background-color: #fdfdfd;
+}
+
+a {
+    color: steelblue;
+}
