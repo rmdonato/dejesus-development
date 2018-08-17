@@ -20,9 +20,7 @@ body {
 h1,
 h2,
 h3 {
-    /*font-family: 'PT Serif', serif;*/
     font-family: 'Lora', serif;
-    color: #bca24b;
 }
 
 h4,
@@ -31,9 +29,15 @@ h6 {
     font-family: 'PT Serif', serif;
 }
 
+hr {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border: 1px solid #1b1e21;
+}
+
 .name-title {
     margin-top: 0;
-    color: #bca24b;
+    color: #1e3455;
     font-size: 15px;
     line-height: 0;
     font-weight: 400;
@@ -46,19 +50,12 @@ h6 {
 }
 
 .bg-jumbo-home {
-    /*background-color: #1a1a1a;*/
     background-image: url('../Images/cover-photo.jpg');
     background-position: center center;
     background-size: cover;
-    height: 900px;
+    height: 1080px;
+    width: 100%;
     background-repeat: no-repeat;
-}
-
-.bg-jumbo-blogpost {
-    background-image: url(../Images/full-blog.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 600px;
 }
 
 .bg-jumbo-contactus {
@@ -95,30 +92,16 @@ h6 {
 }
 
 .bg-jumbo-blog h1 {
-    font-family: 'PT Serif', serif;
     color: white;
     font-size: 60px;
-    letter-spacing: 5px;
-    font-weight: 600;
+    font-weight: normal;
+    padding-top: 25px;
 }
 
 .bg-jumbo-blog p {
     color: white;
     font-size: 24px;
     letter-spacing: 1px;
-}
-
-.bg-signup {
-    background-image: url(../Images/sign-up.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 30vh;
-    padding-top: 30px;
-}
-
-.lawyer {
-    background-image: url('../Images/p1.png');
-    height: 30px;
 }
 
 .padtop20 {
@@ -147,10 +130,13 @@ h6 {
 
 .btn-dark {
     border-radius: 4px;
+    color: #fff;
+    background-color: #d53536;
+    border-color: #d53536;
 }
 
 .btn-orange {
-    background-color: #bca24b;
+    background-color: #d53536;
     height: 38px;
     color: white;
     border-radius: 4px;
@@ -208,13 +194,13 @@ h6 {
     width: 100%;
     opacity: 0;
     transition: .1s ease;
-    background-color: rgba(188, 162, 75, 0.9);
-    color: black;
+    color: white;
 }
 
 .overlay:hover {
     opacity: 100;
     color: white;
+    background-color: rgba(47, 67, 97, 0.90);
 }
 
 .form-control {
@@ -225,8 +211,6 @@ h6 {
 .form-control-blank {
     background-color: transparent;
     display: block;
-    /*width: 100%;*/
-    /*padding: .375rem .75rem;*/
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
@@ -251,7 +235,7 @@ h6 {
 }
 
 .bg-dark {
-    background-color: #1a1a1a !important;
+    background-color: #1e3455 !important;
     color: white;
 }
 
@@ -262,8 +246,8 @@ h6 {
 
 .navbar {
     padding: 0 16px;
-    border-top: 5px solid;
-    border-color: #bca24a;
+    border-top: 8px solid;
+    border-color: #1e3455;
 }
 
 .nav-item {
@@ -271,7 +255,7 @@ h6 {
 }
 
 .nav-item:hover {
-    background-color: #bca24a;
+    background-color: #182b47;
     color: white;
 }
 
@@ -291,7 +275,8 @@ h6 {
 }
 
 .bg-footer {
-    background-color: #1a1a1a;
+    background-color: #1e3455;
+    color: white;
 }
 
 .breadcrumb {
@@ -311,49 +296,20 @@ a {
     border: 1px solid rgba(0, 0, 0, 0.07);
     padding: 40px 28px 40px 28px;
     box-shadow: 4px 4px 3px gainsboro;
-    /*margin-left: 90px;*/
     background-color: rgba(26, 26, 26, .03);
 }
 
-.bg-rdj {
-    /*background-image: url('../Images/rdj1.1.jpg');*/
-    background-image: url('../Images/edj.png');
-    background-repeat: no-repeat;
-    background-position: top right;
-    height: 800px;
-    margin-top: 45px;
-}
-
-.bg-ddj {
-    /*background-image: url('../Images/ddj1.1.jpg');*/
-    background-image: url('../Images/darrendj.png');
-    background-repeat: no-repeat;
-    height: 800px;
-    margin-top: 55px;
-}
-
 .bg-lawyer {
-    background: linear-gradient(rgb(247, 147, 30), rgb(248, 159, 58));
-    background-image: url(../Images/cover-about1.jpg);
-    background-position: center top;
-    background-repeat: repeat;
+    background-image: url(../Images/cover-about2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 750px;
     padding: 50px;
 }
 
-.bg-lawyer1 {
-    background-image: url(../Images/bg.jpg);
-    background-position: center, top;
-    background-repeat: repeat;
-}
-
 .cover-lawyer {
-    background-image: url(../Images/cover-lawyer.jpg);
+    background-image: url(../Images/cover-lawyer1.jpg);
     height: 840px;
-}
-
-.cover-services {
-    background-image: url(../Images/cover-services.jpg);
 }
 
 .sticky {
@@ -363,6 +319,9 @@ a {
 }
 
 @media (max-width:900px) {
+    h2 {
+        font-size: 27px;
+    }
     .bg-lawyer {
         height: 960px;
         background-repeat: repeat;
@@ -383,12 +342,37 @@ a {
     .border-services {
         width: 100%;
     }
+    .text-bio {
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+    }
 }
 
 @media (max-width: 420px) {
     .border-services {
         width: 100% !important;
     }
+    .cover-lawyer {
+        background-color: #cdcdcd;
+        background-image: none;
+    }
+    .cover-lawyer p {
+        text-align: center;
+    }
+    img.atty-img {
+        width: 350px;
+        padding-left: 50px;
+    }
+    .text-bio {
+        text-align: center;
+        padding: 10px 0 !important;
+        margin: 0 !important;
+    }
+}
+
+.atty-img {
+    width: 350px;
 }
 
 .lawyer-border {
@@ -466,44 +450,12 @@ a {
     box-sizing: border-box;
 }
 
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px dashed rgba(48, 53, 66, 0.38);
-    float: left;
-    width: 62%;
-    height: 40px;
-    background: rgba(241, 241, 241, 0);
-}
-
-form.example button {
-    float: left;
-    width: 20%;
-    padding: 7px;
-    background: #c9b56f;
-    color: white;
-    font-size: 16px;
-    border: 1px dashed rgba(48, 53, 66, 0.38);
-    border-left: none;
-    cursor: pointer;
-}
-
-form.example button:hover {
-    background: #c9b56f;
-}
-
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .footer-box {
     border-radius: 0;
 }
 
 .border-card {
-    border-bottom: 3px solid #bca24b;
+    border-bottom: 3px solid #d53536;
 }
 
 .no-border {
@@ -511,39 +463,37 @@ form.example::after {
 }
 
 .border-services {
-    border: 1px solid #a1a1a1;
     padding: 20px 0;
-    height: 20rem;
-    width: 15rem;
+    height: 350px;
 }
 
 .litigation {
-    background-image: url('../assets/images/services-litigation.jpg');
+    background-image: url('../Images/litigation2.jpg');
     background-repeat: no-repeat;
 }
 
 .corporate-practice {
-    background-image: url('../assets/images/services-corporate-practice.jpg');
+    background-image: url('../Images/corporate-practice2.jpg');
     background-repeat: no-repeat;
 }
 
 .labor {
-    background-image: url('../assets/images/services-labor.jpg');
+    background-image: url('../Images/labor2.jpg');
     background-repeat: no-repeat;
 }
 
 .immigration {
-    background-image: url('../assets/images/services-immigration.jpg');
+    background-image: url('../Images/immigration2.jpg');
     background-repeat: no-repeat;
 }
 
 .taxation {
-    background-image: url('../assets/images/services-taxation.jpg');
+    background-image: url('../Images/taxation2.jpg');
     background-repeat: no-repeat;
 }
 
 .special-projects {
-    background-image: url('../assets/images/services-special-projects.jpg');
+    background-image: url('../Images/special-projects2.jpg');
     background-repeat: no-repeat;
 }
 
@@ -558,8 +508,6 @@ form.example::after {
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(188, 162, 75, 0.85);
-    /*background: linear-gradient(to bottom, rgba(188, 162, 75, 0.93) 0%, rgba(255, 204, 102, 0.74) 100%;*/
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -583,9 +531,8 @@ form.example::after {
 }
 
 #our-services-title {
-    background-color: #3a3a3a;
+    background-image: url('../Images/cover-focus.jpg');
     position: relative;
-    /*padding: 35px 0;*/
     padding-top: 55px;
     padding-bottom: 35px;
     width: 1920px;
@@ -596,16 +543,12 @@ form.example::after {
     position: absolute;
     width: 0px;
     height: 0px;
-    border-left: 14px solid transparent;
-    border-right: 14px solid transparent;
-    border-top: 14px solid #3A3A3A;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 14px solid #1e3455;
     left: 50%;
     margin-left: -14px;
     bottom: -14px;
-}
-
-.font {
-    color: rgba(188, 162, 75, 0.85);
 }
 
 .font:hover {
@@ -616,28 +559,19 @@ form.example::after {
     border-right: 2px solid #dee2e6 !important;
 }
 
-#deviant-art-icon {
-    background: url('../assets/images/logo-white.png') no-repeat;
-    display: inline-block;
-    position: relative;
-    text-indent: -9999px;
-    width: 210px;
-    height: 70px;
+.bg-blue {
+    font-size: 1.5rem;
+    background-color: rgba(30, 52, 85, 0.37);
+    padding-top: 15px;
 }
 
-#deviant-art-icon span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url('../assets/images/logo-gold.png') no-repeat;
-    opacity: 0;
-    -webkit-transition: opacity 0.5s;
-    -moz-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
+.bg-post {
+    background-color: #1e3455;
+    height: auto;
+    padding: 25px 20px;
 }
 
-#deviant-art-icon:hover span {
-    opacity: 1;
+.text-bio {
+    padding-top: 55px;
+    margin-top: 55px;
 }

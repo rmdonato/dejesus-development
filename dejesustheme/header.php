@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!--Style.css-->
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/site.css">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Images/icon.png">
 </head>
 <body  <?php body_class(); ?>>
 <div class="navbar navbar-inverse navbar-expand-lg navbar-dark bg-dark navbar-fixed-top sticky-top">
@@ -22,7 +24,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-auto">
             	<?php wp_list_pages( '&title_li=' ); ?>
                 <li class="nav-item">
