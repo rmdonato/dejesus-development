@@ -1,22 +1,8 @@
 <?php get_header(); ?>
-
-<!--<div class="container">
-	<div class="row">
-		<div class="col-sm-12">
-
-			<?php 
-				if ( have_posts() ) : while ( have_posts() ) : the_post();
-					get_template_part( 'content-single', get_post_format() );
-				endwhile; endif; 
-			?>
-
-		</div> 
-	</div> 
-</div> -->
-
+<div class="container-fluid">
 	<div class="row">
 
-		<div class="col-sm-8 blog-main">
+		<div class="col-md-8 blog-main">
 
 			<?php 
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -26,19 +12,19 @@
 			endwhile;
 			?>
 			<nav>
-	<ul class="pager">
-		<li><?php next_posts_link( 'Previous' ); ?></li>
-		<li><?php previous_posts_link( 'Next' ); ?></li>
-	</ul>
-</nav>
+				<ul class="pager">
+					<li><?php next_posts_link( 'Previous' ); ?></li>
+					<li><?php previous_posts_link( 'Next' ); ?></li>
+				</ul>
+			</nav>
 			<?php endif; 
 			?>
 
 		</div> <!-- /.blog-main -->
 
-		<?php get_sidebar(); ?>
+	
 
 	</div> <!-- /.row -->
-
+</div>
 
 <?php get_footer(); ?>

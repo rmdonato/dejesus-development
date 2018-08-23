@@ -62,7 +62,13 @@
         <div class="col-md-3 order-md-4 pt-md-5 pl-md-5 text-md-left text-sm-center">
             <div class="text-bio">
                 <h2>Atty. Edgardo L. de Jesus</h2>
-                <p>He specializes in the following fields of law: <br /> Nunc tristique lectus in leo malesuada, nec varius eros porttitor. Aenean eu elit.</p>
+                <p>Gary specializes in litigation, labor, and immigration law. He counsels his clients on corporate
+law and taxation issues. His clients include PLDT Group, Huawei Philippines, Luzon
+Development Bank, Minebea Co. Ltd., Fe Del Mundo Hospital, among others. Adept in handling
+difficult situations, Gary was General Counsel of Pepsi Cola Philippines where he held the
+company together during the “349” legal crisis, amidst the over 50,000 cases filed against the
+company. He was also the Deputy Administrator of MWSS on its first ever UNCITRAL dispute in
+which he presented all witnesses of MWSS and cross-examined those of Manila Water.</p>
             </div>
         </div>
         <div class="col-md-3 order-md-2 pr-3">
@@ -72,7 +78,12 @@
         <div class="col-md-3 order-md-1 pt-md-5 pl-md-5 text-md-right text-sm-center">
             <div class="text-bio">
                 <h2>Atty. Darren M. de Jesus</h2>
-                <p>He specializes in the following fields of law: <br /> Nunc tristique lectus in leo malesuada, nec varius eros porttitor. Aenean eu elit.</p>
+<p>Darren is an experienced litigator, having worked for ACCRA Law Office and the Bangko
+Sentral ng Pilipinas. He is a lecturer at DLSU, and a columnist of The Daily Tribune. He is the
+Deputy Secretary General, Inter-parliamentary and Public Affairs Department of the House of
+Representatives, and the Head Executive Assistant of former House Speaker Pantaleon D.
+Alvarez. Darren assists the Firm, pursuant an Authority to Engage in Limited Practice of
+Profession, in accordance with CSC Rules. He graduated from the Ateneo School of Law.</p>
             </div>
         </div>
     </div>
@@ -83,7 +94,7 @@
         <div class="row">
             <div id="our-services-title" class="text-center">
                 <h1 class="text-white" style="padding-top:25px;">OUR FOCUS</h1>
-                <p class="text-white" style="line-height:0;">We provide our clients with the following areas</p>
+                <p class="text-white" style="line-height:0;">We provide legal services to our clients in the following areas</p>
             </div>
         </div>
     </div>
