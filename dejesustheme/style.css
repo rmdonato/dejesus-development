@@ -267,6 +267,6 @@ h2 {
     background-color: #fdfdfd;
 }
 
-a {
-    color: steelblue;
+.blog-post-title a {
+    color: black;
 }

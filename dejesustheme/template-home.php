@@ -59,31 +59,31 @@
             <img class="atty-img" src="<?php bloginfo('template_directory'); ?>/assets/images/edj1.png" alt="Atty. Darren de Jesus" />
             <hr />
         </div>
-        <div class="col-md-3 order-md-4 pt-md-5 pl-md-5 text-md-left text-sm-center">
+        <div class="col-md-3 order-md-4 pl-md-5 text-md-left text-sm-center">
             <div class="text-bio">
                 <h2>Atty. Edgardo L. de Jesus</h2>
                 <p>Gary specializes in litigation, labor, and immigration law. He counsels his clients on corporate
-law and taxation issues. His clients include PLDT Group, Huawei Philippines, Luzon
-Development Bank, Minebea Co. Ltd., Fe Del Mundo Hospital, among others. Adept in handling
-difficult situations, Gary was General Counsel of Pepsi Cola Philippines where he held the
-company together during the “349” legal crisis, amidst the over 50,000 cases filed against the
-company. He was also the Deputy Administrator of MWSS on its first ever UNCITRAL dispute in
-which he presented all witnesses of MWSS and cross-examined those of Manila Water.</p>
+                law and taxation issues. His clients include PLDT Group, Huawei Philippines, Luzon
+                Development Bank, Minebea Co. Ltd., Fe Del Mundo Hospital, among others. Adept in handling
+                difficult situations, Gary was General Counsel of Pepsi Cola Philippines where he held the
+                company together during the “349” legal crisis, amidst the over 50,000 cases filed against the
+                company. He was also the Deputy Administrator of MWSS on its first ever UNCITRAL dispute in
+                which he presented all witnesses of MWSS and cross-examined those of Manila Water.</p>
             </div>
         </div>
         <div class="col-md-3 order-md-2 pr-3">
             <img class="atty-img" src="<?php bloginfo('template_directory'); ?>/assets/images/ddj.png" alt="Atty. Darren de Jesus" />
             <hr/>
         </div>
-        <div class="col-md-3 order-md-1 pt-md-5 pl-md-5 text-md-right text-sm-center">
+        <div class="col-md-3 order-md-1 pl-md-5 text-md-right text-sm-center">
             <div class="text-bio">
                 <h2>Atty. Darren M. de Jesus</h2>
-<p>Darren is an experienced litigator, having worked for ACCRA Law Office and the Bangko
-Sentral ng Pilipinas. He is a lecturer at DLSU, and a columnist of The Daily Tribune. He is the
-Deputy Secretary General, Inter-parliamentary and Public Affairs Department of the House of
-Representatives, and the Head Executive Assistant of former House Speaker Pantaleon D.
-Alvarez. Darren assists the Firm, pursuant an Authority to Engage in Limited Practice of
-Profession, in accordance with CSC Rules. He graduated from the Ateneo School of Law.</p>
+                <p>Darren is an experienced litigator, having worked for ACCRA Law Office and the Bangko
+                Sentral ng Pilipinas. He is a lecturer at DLSU, and a columnist of The Daily Tribune. He is the
+                Deputy Secretary General, Inter-parliamentary and Public Affairs Department of the House of
+                Representatives, and the Head Executive Assistant of former House Speaker Pantaleon D.
+                Alvarez. Darren assists the Firm, pursuant an Authority to Engage in Limited Practice of
+                Profession, in accordance with CSC Rules. He graduated from the Ateneo School of Law.</p>
             </div>
         </div>
     </div>
@@ -157,54 +157,27 @@ Profession, in accordance with CSC Rules. He graduated from the Ateneo School of
     <div class="col-md-12 text-center py-3">
         <h1 class="text-white pt-3">Recent Posts</h1>
     </div>
-    <div class="row my-5">
-        <div class="col-md-3">
-            <div class="card border-card">
-                <img class="card-img-top" src="<?php bloginfo('template_directory'); ?>/assets/images/leaps-and-bounds.jpg" alt="leaps and bounds">
-                <div class="card-body">
-                    <h5 class="card-title">Leaps and bounds</h5>
-                    <p class="card-text"><small class="text-muted">July 13, 2018</small></p>
-                    <p class="card-text">Last Saturday, I conducted a six-hour lecture on Special Commercial Laws at the Legal Edge Bar Review Center attended by aspiring future lawyers. It...</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-card">
-                <img class="card-img-top" src="<?php bloginfo('template_directory'); ?>/assets/images/fiba.jpg" alt="shot fired">
-                <div class="card-body">
-                    <h5 class="card-title">Shot fired</h5>
-                    <p class="card-text"><small class="text-muted">July 6, 2018</small></p>
-                    <p class="card-text">It was a gruesome week for Philippine sports and politics. A basketball game turned into a wrestling match. Everything was caught on camera and seen...</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-card">
-                <img class="card-img-top" src="<?php bloginfo('template_directory'); ?>/assets/images/no-loitering.jpg" alt="no loitering">
-                <div class="card-body">
-                    <h5 class="card-title">No loitering (aka 'tambay')</h5>
-                    <p class="card-text"><small class="text-muted">June 29, 2018</small></p>
-                    <p class="card-text">
-                        “The word tambay is even a generic one describing how time is spent on unimportant things.” “Idle loiterers” maybe a politically correct term, but let’s be bluntly...</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-card">
-                <img class="card-img-top" src="<?php bloginfo('template_directory'); ?>/assets/images/world-cup.jpg" alt="world cup">
-                <div class="card-body">
-                    <h5 class="card-title">A reflection on the World Cup – politics and the chief justice </h5>
-                    <p class="card-text"><small class="text-muted">June 22, 2018</small></p>
-                    <p class="card-text">
-                        “To jump back to the World Cup, the roster of teams participating seems odd due to the non-inclusion of Italy.” I have been getting up...</p>
-                    <a href="#" class="card-link">Read more</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<div class="row my-5">
+<?php query_posts('showposts=4'); if (have_posts()) : while (have_posts()) : the_post(); ?>
+     <div class="col-md-3">
+     <div class="card border-card">
+     <?php if ( has_post_thumbnail() ) {
+		the_post_thumbnail(array(900,300), array('class' => 'card-img-top'));
+		} ?>
+         <div class="card-body">
+             <h5 class="card-title"><?php the_title(); ?></h5>
+             <p class="card-text blog-post-meta"><small class="text-muted"><?php the_date(); ?> by <a href="#"><?php the_author(); ?></a></small></p>
+             <p class="card-text"><?php the_excerpt(); ?></p>
+             <a href="<?php the_permalink(); ?>" class="card-link">Read more</a>
+         </div>
+     </div>
+ </div>
+<?php
+endwhile;
+?>
+
+<?php endif;?>
 </div>
 
 <div class="container-fluid">
