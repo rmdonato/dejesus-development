@@ -168,6 +168,8 @@
          <div class="card-body">
              <h5 class="card-title"><?php the_title(); ?></h5>
              <p class="card-text blog-post-meta"><small class="text-muted"><?php the_date(); ?> by <a href="#"><?php the_author(); ?></a></small></p>
+             <small class="blog-post-meta">Tags: <?php the_category( ', ' ); ?> </small>
+            <br/>
              <p class="card-text"><?php the_excerpt(); ?></p>
              <a href="<?php the_permalink(); ?>" class="card-link">Read more</a>
          </div>
