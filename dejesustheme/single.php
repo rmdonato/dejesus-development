@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
-	<div class="row">
-		<div class="col-sm-12">
+<div class="container-fluid">
+	<div class="row justify-content-center py-5 my-5">
+		
 
 			<?php 
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -14,7 +15,6 @@
         endwhile; endif; 
 			?>
 
-		</div> <!-- /.col -->
 	</div> <!-- /.row -->
-
+	</div>
 <?php get_footer(); ?>

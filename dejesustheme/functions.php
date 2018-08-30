@@ -30,6 +30,13 @@ add_theme_support( 'title-tag' );
 add_theme_support( 'post-thumbnails' );
 
 
+require get_template_directory() . '/bootstrap-navwalker.php';
+
+register_nav_menus( array(
+        'menu-1' => esc_html__( 'Primary', 'theme-textdomain' ),
+    ) );
+
+
 // Custom settings
 function custom_settings_add_menu() {
         add_menu_page( 'Custom Settings', 'Custom Settings', 'manage_options', 'custom-settings', 'custom_settings_page', null, 99 );

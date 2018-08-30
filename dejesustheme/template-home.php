@@ -32,7 +32,7 @@
             </p>
             <br />
             <br />
-            <h4>Atty. Edgardo de Jesus</h4>
+            <h4>Atty. Edgardo L. de Jesus</h4>
             <p style="color: #1e3455" class="name-title">Founder of De Jesus & Associates</p>
         </div>
         <div class="col-md-2 d-none d-md-block">
@@ -94,7 +94,7 @@
         <div class="row">
             <div id="our-services-title" class="text-center">
                 <h1 class="text-white" style="padding-top:25px;">OUR FOCUS</h1>
-                <p class="text-white" style="line-height:0;">We provide legal services to our clients in the following areas</p>
+                <p class="text-white">We provide legal services to our clients in the following areas</p>
             </div>
         </div>
     </div>
@@ -180,6 +180,7 @@ endwhile;
 ?>
 
 <?php endif;?>
+</div>
 </div>
 
 <div class="container-fluid">

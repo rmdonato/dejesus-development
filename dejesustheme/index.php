@@ -18,13 +18,11 @@
 			endwhile;
 			?>
 		<div class="row mx-auto">
-			<nav>
-				<ul class="pager">
-					<li><?php next_posts_link( 'Previous' ); ?></li>
-					<li><?php previous_posts_link( 'Next' ); ?></li>
-				</ul>
-			</nav>
+			<!-- Add the pagination functions here. -->
+			<div class="nav-previous alignleft"><?php next_posts_link( 'Older posts' ); ?></div>
+			<div class="nav-next alignright"><?php previous_posts_link( 'Newer posts' ); ?></div>
 		</div>	
+
 			<?php endif; 
 			?>
 

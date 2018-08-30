@@ -16,30 +16,26 @@
     <link rel="icon" type="image/png" sizes="32x32" href="~/Images/icon.png">
 </head>
 <body  <?php body_class(); ?>>
-<div class="navbar navbar-inverse navbar-expand-lg navbar-dark bg-dark navbar-fixed-top sticky-top">
-        <a class="navbar-brand" href="">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
             <img src="<?php bloginfo('template_directory'); ?>/assets/images/logo-white.png" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="<?php esc_html_e( 'Toggle Navigation', 'theme-textdomain' ); ?>">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto">
-            	<?php wp_list_pages( '&title_li=' ); ?>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Services</a>    
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-white" href="#">Commentary</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contact Us</a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'menu-1',
+                'menu_id'        => 'primary-menu',
+                'container'      => false,
+                'depth'          => 2,
+                'menu_class'     => 'navbar-nav ml-auto',
+                'walker'         => new Bootstrap_NavWalker(),
+                'fallback_cb'    => 'Bootstrap_NavWalker::fallback',
+            ) );
+            ?>
         </div>
-    </div>
-
+</nav>
