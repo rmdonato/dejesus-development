@@ -12,7 +12,6 @@
 			<p class="blog-post-meta"><?php the_date(); ?> by <a href="#"><?php the_author(); ?></a></p>
 			<?php the_excerpt(); ?>
 			<a href="<?php the_permalink(); ?>" class="card-link">Read more</a>
-			<a href="<?php /**comments_link(); **/?>"></a>
 	</div>
 	</div>
 

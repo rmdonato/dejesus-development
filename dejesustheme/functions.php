@@ -29,6 +29,12 @@ add_theme_support( 'title-tag' );
 // Support Featured Images
 add_theme_support( 'post-thumbnails' );
 
+// Enable Shortcodes
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');
+
+add_filter( 'the_excerpt', 'shortcode_unautop');
+add_filter( 'the_excerpt', 'do_shortcode');
 
 require get_template_directory() . '/bootstrap-navwalker.php';
 
@@ -56,4 +62,29 @@ function custom_settings_page_setup() {
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );
 
+
+function right_sidebar_widget() {
+        register_sidebar( array(
+            'name'          => __( 'Primary Sidebar', 'theme_name' ),
+            'id'            => 'sidebar-1',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</aside>',
+            'before_title'  => '<h1 class="widget-title">',
+            'after_title'   => '</h1>',
+        ) );
+     
+        register_sidebar( array(
+            'name'          => __( 'Secondary Sidebar', 'theme_name' ),
+            'id'            => 'sidebar-2',
+            'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</li></ul>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        ) );
+    }
+    add_action( 'widgets_init', 'right_sidebar_widget' );       
+    
 ?>
+
+
+
