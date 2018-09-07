@@ -1,5 +1,4 @@
 <?php
-
 function wordpress_main_style() {
         wp_enqueue_style( 'style', get_template_directory_uri() . '/assets/css/site.css');
 }
@@ -48,5 +47,4 @@ function custom_settings_page_setup() {
   register_setting('section', 'twitter');
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );
-
 ?>
